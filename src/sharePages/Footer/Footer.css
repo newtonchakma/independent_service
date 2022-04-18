@@ -1,0 +1,11 @@
+.footer{
+    height:100px;
+    font-size: 30px;
+    font-weight: 700;
+  
+}
+.footer p{
+    margin-top: 30px;
+    padding-top: 20px;
+    color: whitesmoke;
+}

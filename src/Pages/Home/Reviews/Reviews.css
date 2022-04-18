@@ -1,0 +1,11 @@
+.reviews-section{
+    display: flex;
+   
+}
+.customer-reviews{
+    height:60vh;
+    width:100%;
+}
+.review-btn{
+    margin: 0 auto;
+}

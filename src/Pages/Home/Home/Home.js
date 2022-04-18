@@ -1,12 +1,17 @@
 import React from 'react';
+import Footer from '../../../sharePages/Footer/Footer';
 import Banner from '../Banner/Banner';
-import Service from '../Service/Service';
+import Reviews from '../Reviews/Reviews';
+import Services from '../Services/Services';
+
 
 const Home = () => {
     return (
         <div>
          <Banner></Banner>
-            <Service></Service>
+         <Services></Services>
+         <Reviews></Reviews>
+         <Footer></Footer>
         </div>
     );
 };
