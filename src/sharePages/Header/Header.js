@@ -6,12 +6,12 @@ const Header = () => {
     return (
         <Navbar className='sticky-top' collapseOnSelect expand="lg" bg="primary" variant="dark">
   <Container>
-  <Navbar.Brand href="#home">NEWTON FITNESS</Navbar.Brand>
+  <Navbar.Brand as={Link} to="home">NEWTON FITNESS</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link as={Link} to="home">Home</Nav.Link>
-      <Nav.Link as={Link} to="services">Services</Nav.Link>
+      <Nav.Link href="#services">Services</Nav.Link> 
+      <Nav.Link href="#reviews">Reviews</Nav.Link>
     </Nav>
     <Nav>
       <Nav.Link as={Link} to="about">About</Nav.Link>
