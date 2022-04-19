@@ -14,7 +14,7 @@ const Service = ({service}) => {
           
           <div className="col-sm-12 col-md-6 col-lg-4 col-12 gx-5">
           <div class="card ">
-           <img src={picture} alt="" />
+           <img className='service-photo' src={picture} alt="" />
                  <div className="card-body">
                    <h5 className="card-title">{title}</h5>
                     <h6 className="card-title">{price}</h6>

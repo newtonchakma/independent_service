@@ -20,9 +20,11 @@ const Banner = () => {
           src={banner1}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption className='mb-5 pb-5'>
+          <h2>Take Your Fitness</h2>
+          <h2>To The Next Level</h2>
+          <p>PREMIUM ONLINE & INDIVIDUAL PERSONAL TRAINING WITH NEWTON FITNESS</p>
+          <button className="btn btn-dark px-4 py-2">START HERE</button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,8 +35,10 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2>Take Your Fitness</h2>
+          <h2>To The Next Level</h2>
+          <p>PREMIUM ONLINE & INDIVIDUAL PERSONAL TRAINING WITH NEWTON FITNESS</p>
+          <button className="btn btn-dark px-4 py-2">START HERE</button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -45,10 +49,10 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+        <h2>Take Your Fitness</h2>
+          <h2>To The Next Level</h2>
+          <p>PREMIUM ONLINE & INDIVIDUAL PERSONAL TRAINING WITH NEWTON FITNESS</p>
+          <button className="btn btn-dark px-4 py-2">START HERE</button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
