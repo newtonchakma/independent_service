@@ -23,7 +23,9 @@ const Reviews = () => {
             }
          
           </div>
-          <button className='mx-auto btn review-btn text-center mx-auto'>SHOW MORE STORY</button>
+      <div className=" text-center review-btn">
+      <button className='mx-auto btn '>SHOW MORE STORY</button>
+      </div>
         </div>
     );
 };

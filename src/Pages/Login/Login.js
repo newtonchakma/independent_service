@@ -1,9 +1,8 @@
-/* import { signInWithEmailAndPassword } from 'firebase/auth'; */
+
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useRef } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-/* import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'; */
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
 
@@ -11,7 +10,7 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate()
-
+   
 
     const [
         signInWithEmailAndPassword,
@@ -19,9 +18,11 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+      const location = useLocation();
+      const from = location.state?.from?.pathname || '/';
 
       if(user) {
-          navigate('/home');
+          navigate(from, {replace: true});
       }
     const handleSubmit = e =>{
        e.preventDefault();
