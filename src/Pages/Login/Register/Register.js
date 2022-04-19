@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import './Register.css'
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLagin/SocialLogin';
+import Footer from '../../../sharePages/Footer/Footer';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -36,8 +37,10 @@ const Register = () => {
        navigate('/home');
     }
     return (
-        <div className='register-form'>
-            <h1>register</h1>
+       <>
+
+<div className='register-form'>
+            <h1 className='text-center'>REGISTER</h1>
             <form onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder="Your Name"/>
                 <input type="email" name="email" id="" placeholder="Email Address" required/>
@@ -49,6 +52,8 @@ const Register = () => {
             <p>Already have an account? <Link to='/login' className='text-primary text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
             <SocialLogin></SocialLogin>
         </div>
+        <Footer></Footer>
+       </>
     );
 };
 

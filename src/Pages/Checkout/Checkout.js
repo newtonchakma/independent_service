@@ -1,7 +1,9 @@
 import React from 'react';
+import Footer from '../../sharePages/Footer/Footer';
 
 const Checkout = () => {
     return (
+        <>
         <div className='mx-auto text-center'>
            <h1 className='mt-5 pt-5 text-uppercase'>Please checkout for your bookings</h1>
            <div className="container">
@@ -26,6 +28,8 @@ const Checkout = () => {
                </div>
            </div> 
         </div>
+        <Footer></Footer>
+        </>
     );
 };
 

@@ -9,6 +9,7 @@ import SocialLogin from './SocialLagin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Toast } from 'react-bootstrap';
+import Footer from '../../sharePages/Footer/Footer';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -60,8 +61,9 @@ const Login = () => {
     }
 
     return (
-        <div className='login-form'>
-            <h2>please login</h2>
+       <>
+         <div className='login-form'>
+            <h2 className='text-center '>PLEASE LOGIN</h2>
             <form onSubmit={handleSubmit}>
                 <input ref={emailRef} type="email" name="email" id="" placeholder="Email Address" required/>
            
@@ -77,6 +79,9 @@ const Login = () => {
             <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>
+        <Footer></Footer>
+
+       </>
     );
 };
 

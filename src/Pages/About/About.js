@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutme from '../../images/aboutMe/about-me.jpg'
+import Footer from '../../sharePages/Footer/Footer';
 
 const About = () => {
     return (
@@ -19,6 +20,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

@@ -1,15 +1,29 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
+import Footer from '../../sharePages/Footer/Footer';
 
 const Blogs = () => {
     return (
+      <>
 
+      
       <div className="container mt-5 pt-5">
             <Accordion defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
           <Accordion.Header>Q-1 : Why are you using firebase? What other options do you have to implement authentication?</Accordion.Header>
           <Accordion.Body>
           Google Firebase is an application development platform that allows developers to create iOS, Android, and Web apps.Google Firebase offers many features that pitch it as the go-to backend development tool for web and mobile apps. It reduces development workload and time. And it's a perfect prototyping tool. Firebase is simple, lightweight, friendly, and industrially recognized.
+          <h6>There are 10 platforms list to user authentication.</h6>
+          1.Firebase
+          2.Stytch 
+          3.Ory
+          4.Pingldentity
+          5.Forntegg
+          6.Auth
+          7.Authress
+          8.Supabase
+          9.Keyckoak
+          10.Okta
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
@@ -33,10 +47,22 @@ const Blogs = () => {
       
           </Accordion.Body>
         </Accordion.Item>
+        <Accordion.Item eventKey="2">
+          <Accordion.Header>Q-3: What other services does firebase provide other then authentication?</Accordion.Header>
+          <Accordion.Body>
+          1.Real time database
+          2.Real config 
+          3.cloud Function
+          4.Hosting
+          5.Cloud messanging 
+          6.cloud store
+          and so on.......
+          </Accordion.Body>
+        </Accordion.Item>
       </Accordion>
       </div>
-
-      
+    <Footer></Footer>
+      </>
     );
 };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import Footer from '../../sharePages/Footer/Footer';
 
 const ServiceDetail = () => {
     const {serviceId} = useParams();
@@ -11,6 +12,7 @@ const ServiceDetail = () => {
                 <button className='btn btn-primary'>Proceed checkout</button>
             </Link>
            </div>
+           <Footer></Footer>
         </div>
     );
 };
