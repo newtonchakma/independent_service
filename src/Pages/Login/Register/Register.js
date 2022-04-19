@@ -43,7 +43,7 @@ const Register = () => {
                 <input type="email" name="email" id="" placeholder="Email Address" required/>
            
                 <input  type="password" name="password" id="" placeholder="Password" required/>
-                <input type="submit" value="Register" />
+                <input className='w-50 d-block mx-auto py-3 rounded-2 bg-primary' type="submit" value="Register" />
             </form>
 
             <p>Already have an account? <Link to='/login' className='text-primary text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>

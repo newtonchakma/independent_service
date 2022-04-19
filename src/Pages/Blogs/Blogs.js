@@ -1,8 +1,55 @@
 import React from 'react';
+import { Accordion } from 'react-bootstrap';
 
 const Blogs = () => {
     return (
-        <div className='container'>
+
+      <div className="container mt-5 pt-5">
+            <Accordion defaultActiveKey="0" flush>
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>Q-1 : Why are you using firebase? What other options do you have to implement authentication?</Accordion.Header>
+          <Accordion.Body>
+          Google Firebase is an application development platform that allows developers to create iOS, Android, and Web apps.Google Firebase offers many features that pitch it as the go-to backend development tool for web and mobile apps. It reduces development workload and time. And it's a perfect prototyping tool. Firebase is simple, lightweight, friendly, and industrially recognized.
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>Q-2 Difference between authorization and authentication?</Accordion.Header>
+          <Accordion.Body>
+         
+              <h3>Authentication</h3>
+              <p>1.In authentication process, the identity of users are checked for providing the access to the system.</p>
+             <p> 2.In authentication process, users or persons are verified.</p>
+              <p>3.It is done before the authorization process.</p>
+              <p>4.It needs usually user’s login details.</p>
+              <p> 5.Authentication determines whether the person is user or not.</p>
+
+
+              <h3>Authorization</h3>
+              <p>1.While in authorization process, person’s or user’s authorities are checked for accessing the resources.</p>
+              <p>2.While in this process, users or persons are validated.</p>
+              <p>3.While this process is done after the authentication process.</p>
+              <p>4.While it needs user’s privilege or security levels.</p>
+              <p>5.While it determines What permission do user have?</p>
+      
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      </div>
+
+      
+    );
+};
+
+export default Blogs;
+
+
+
+
+
+
+ /*
+
+   <div className='container'>
       <question-one-ans-section >
       <div className="question-1">
           <h6> <strong>Q-01:</strong> Difference between authorization and authentication?</h6>
@@ -43,8 +90,4 @@ const Blogs = () => {
              
              </div>
 
-        </div>
-    );
-};
-
-export default Blogs;
+        </div>  */

@@ -50,8 +50,13 @@ const Login = () => {
     }
     const resetPassword =async()=>{
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        toast('Sent email')
+        if(email){
+            await sendPasswordResetEmail(email);
+          toast('Sent email');
+        }
+        else{
+            toast('Enter Your Email Address')
+        }
     }
 
     return (
@@ -61,7 +66,9 @@ const Login = () => {
                 <input ref={emailRef} type="email" name="email" id="" placeholder="Email Address" required/>
            
                 <input ref={passwordRef} type="password" name="password" id="" placeholder="Password" required/>
-                <input type="submit" value="LogIn" />
+                <div className="">
+                <input className='w-50 d-block mx-auto py-3 rounded-2 bg-primary' type="submit" value="LogIn" />
+                </div>
             </form>
             {errorElement}
           
